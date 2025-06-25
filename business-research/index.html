@@ -454,7 +454,9 @@
 <body>
     <!-- 会社ロゴ（左上固定） -->
     <div class="company-logo-header">
-        <img src="../business-mail/img/chomoku-head-logo.png" alt="合同会社長目">
+        <a href="https://www.chomoku.info" target="_blank">
+            <img src="../business-mail/img/chomoku-head-logo.png" alt="合同会社長目">
+        </a>
     </div>
 
     <div class="presentation-container">
@@ -473,6 +475,11 @@
                     <li>名刺交換でのちょっとした話題に触れたメールを、自然に丁寧に仕上げる方法もご紹介しました</li>
                     <li>ChatGPTでの有効な文章構成テクニックを習得</li>
                 </ul>
+                <div class="center" style="margin-top: 20px;">
+                    <a href="https://hideyuki-ogawa.github.io/hannari-genai-kitchen/business-mail/" target="_blank" style="display: inline-block; padding: 10px 20px; background: #32cd32; color: white; text-decoration: none; border-radius: 10px; font-size: 0.9em; transition: background 0.3s ease;" onmouseover="this.style.background='#228b22'" onmouseout="this.style.background='#32cd32'">
+                        📧 前回の資料を見る
+                    </a>
+                </div>
             </div>
             <div class="center" style="margin-top: 30px;">
                 <p class="large-text">そして…そのメールにご返信をいただき、お会いできることになりました！</p>
@@ -566,11 +573,11 @@
             
             <div class="ai-comparison">
                 <div class="ai-method">
-                    <h4>普通の検索</h4>
+                    <h4>普通の検索 (GPT-4o)</h4>
                     <p>さらっと調べてくれる</p>
                 </div>
                 <div class="ai-method">
-                    <h4>reasoning / thinking モデル</h4>
+                    <h4>reasoning / thinking モデル (o3/o4)</h4>
                     <p>考えながら調べてくれる</p>
                 </div>
                 <div class="ai-method">
@@ -585,21 +592,41 @@
             </div>
         </div>
 
-        <!-- スライド7: 実際の調査から提案作成 -->
+        <!-- スライド7: 具体的な調査順序 -->
         <div class="slide slide-7">
-            <h2>実際の調査から提案作成</h2>
-            <div class="center" style="margin-top: 50px;">
-                <p style="font-size: 3em; color: #32cd32;">実践してみます。</p>
-            </div>
-            <div class="demo-container">
-                <textarea class="demo-input" placeholder="例：株式会社○○について調査してください。
-・基本情報（会社概要、事業内容、ビジネスモデル）
-・業界動向と近年の課題
-・想定される課題と弊社サービスとの接点" id="demoInput"></textarea>
-                <button class="nav-btn" onclick="generateResearch()" style="position: relative; margin-bottom: 20px;">調査開始</button>
-                <div class="demo-output" id="demoOutput">
-                    調査結果がここに表示されます...
+            <h2>具体的な調査順序</h2>
+            <p class="center" style="font-size: 1.2em; margin-bottom: 30px;">効果的な企業調査は以下の順序で進めます</p>
+            
+            <div class="steps-container" style="grid-template-columns: repeat(2, 1fr); gap: 20px;">
+                <div class="step-card">
+                    <div class="step-number">1</div>
+                    <h4>会社調査</h4>
+                    <p>基本情報・事業内容・ビジネスモデルを把握</p>
                 </div>
+                <div class="step-card">
+                    <div class="step-number">2</div>
+                    <h4>課題調査</h4>
+                    <p>業界動向から想定される課題を洗い出し</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">3</div>
+                    <h4>同業の活用例</h4>
+                    <p>類似企業での成功事例やソリューション例を調査</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">4</div>
+                    <h4>訪問アイデア生成</h4>
+                    <p>調査結果から具体的な提案・会話のネタを作成</p>
+                </div>
+            </div>
+
+            <div class="feature-card" style="margin-top: 30px;">
+                <h3>💡 ポイント</h3>
+                <p>各ステップで得た情報を次のステップに活用することで、<span class="highlight">より具体的で実用的な提案</span>が可能になります。</p>
+            </div>
+
+            <div class="center" style="margin-top: 30px;">
+                <p class="large-text">それでは実践してみましょう！</p>
             </div>
         </div>
 
